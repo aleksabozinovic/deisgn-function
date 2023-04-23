@@ -291,3 +291,62 @@ nav .container {
   row-gap: 30px;
   gap: 30px;
 }
+
+/* Expertise */
+.expertise--section {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.expertise--section .container,
+.cost__effectivness--section .container,
+.quality--section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.expertise--div,
+.cost__effectivness--div {
+  background: var(--gray--color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: #fff;
+  position: absolute;
+  width: 740px;
+  right: 75px;
+  color: #000;
+}
+.expertise--div h2,
+.cost__effectivness--div h2,
+.quality--div h2 {
+  margin: 30px 0;
+  font-size: 40px;
+}
+
+/* Quality */
+
+.quality--section {
+  padding-bottom: 60px;
+}
+.quality--section .container {
+  justify-content: flex-end;
+}
+
+.quality--div {
+  background: var(--gray--color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: #fff;
+  position: absolute;
+  width: 740px;
+  left: 75px;
+  color: #000;
+}
+
+/* Cost Effectivness */
