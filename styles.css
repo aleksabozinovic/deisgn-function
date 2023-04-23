@@ -24,11 +24,11 @@ a {
 }
 
 .section--container {
-  padding: 0 185px;
+  padding: 0 200px;
 }
 
 .container {
-  padding: 0 75px;
+  padding: 0 120px;
 }
 
 .red__line {
@@ -143,8 +143,11 @@ nav .container {
   padding: 60px;
   color: #fff;
   position: absolute;
-  width: 740px;
-  right: 75px;
+  width: 950px;
+  right: 120px;
+}
+.company__culture--section img {
+  width: 1000px;
 }
 .company__culture--div h2 {
   font-size: 40px;
@@ -199,7 +202,10 @@ nav .container {
   flex: 1;
   margin-left: 140px;
 }
-
+.testimonials__col2 h2 {
+  margin-top: 30px;
+  font-size: 40px;
+}
 /* Services */
 .services--section {
   padding-bottom: 100px;
@@ -317,7 +323,7 @@ nav .container {
   color: #fff;
   position: absolute;
   width: 740px;
-  right: 75px;
+  right: 120px;
   color: #000;
 }
 .expertise--div h2,
@@ -345,8 +351,286 @@ nav .container {
   color: #fff;
   position: absolute;
   width: 740px;
-  left: 75px;
+  left: 120px;
   color: #000;
 }
 
 /* Cost Effectivness */
+.process--section .section--container {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.process--section .section--container h2 {
+  font-size: 40px;
+  margin: 30px 0;
+}
+.process--section .section--container p {
+  font-size: 14px;
+  width: 520px;
+}
+.process--section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.process--section .container h4 {
+  font-size: 20px;
+  margin: 30px 0;
+}
+.process--section .container p {
+  font-size: 14px;
+}
+.process--box {
+  width: 630px;
+}
+
+/* FAQ SECTION */
+
+.faq--section {
+  padding: 100px 0;
+}
+.faq--section .section--container {
+  display: flex;
+  justify-content: space-between;
+}
+.faq__col1 h2 {
+  margin-top: 30px;
+  font-size: 40px;
+}
+.faq__col1 {
+  flex: 1;
+}
+.faq__col2 {
+  flex: 2;
+}
+
+.faq--box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #858585;
+  padding: 16px 20px;
+  margin-bottom: 30px;
+}
+.faq--box:last-child {
+  margin-bottom: 0;
+}
+.faq--box p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Contact Us */
+.contact__us {
+  background: var(--gray--color);
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.contact__us h2 {
+  font-size: 40px;
+  margin: 30px 0;
+}
+.contact__us form {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  column-gap: 30px;
+}
+.contact__us form input {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-left: 10px;
+  background: transparent;
+  border: 1px solid #000;
+}
+.contact--div label {
+  font-size: 20px;
+}
+
+/* Footer  */
+footer {
+  background: var(---blue--color);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+footer a {
+  color: #fff;
+}
+.footer__ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.footer__ul li {
+  margin-right: 60px;
+}
+.footer__ul li a {
+  font-size: 20px;
+}
+.footer__ul li:last-child {
+  margin-right: 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer--col2 {
+  display: flex;
+}
+.footer--col2 a,
+.footer--col1 p {
+  font-size: 12px;
+}
+.footer--col2 li:first-child {
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 1440px) {
+  .section--container {
+    padding: 0 185px;
+  }
+
+  .container {
+    padding: 0 75px;
+  }
+  .hero__section {
+    background-image: url("/images/hero--img1440.png");
+  }
+  .company__culture--div {
+    width: 740px;
+    right: 75px;
+  }
+  .expertise--div,
+  .cost__effectivness--div {
+    right: 75px;
+  }
+  .quality--div {
+    left: 75px;
+  }
+  .company__culture--section img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .services--section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    justify-items: center;
+  }
+  .process--section .container {
+    grid-template-columns: repeat(auto-fill, minmax(630px, 1fr));
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .company__culture--div {
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .company__culture--section img {
+    width: 100% !important;
+  }
+  .company__culture--section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section--container {
+    padding: 0 75px;
+  }
+  .quality--div,
+  .cost__effectivness--div,
+  .expertise--div {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .quality--section .container {
+    flex-direction: column-reverse;
+  }
+  .expertise--section .container,
+  .cost__effectivness--section .container {
+    flex-direction: column;
+  }
+  .expertise--section .container img,
+  .cost__effectivness--section .container img,
+  .quality--section .container img {
+    width: 100%;
+  }
+  .process--box {
+    width: 100%;
+  }
+  .process--box img {
+    width: 100%;
+  }
+  .about__us--section {
+    padding-bottom: 60px;
+  }
+  .testimonials {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .testimonials .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .testimonials__col1 {
+    width: 100%;
+  }
+  .testimonails__col1--text {
+    margin: auto;
+  }
+  .testimonials__col2 {
+    margin-left: 0;
+  }
+  .testimonials__col2 h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .nav__col2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 862px) {
+  .testimonails__col1--text {
+    width: 90%;
+  }
+  .process--section .container,
+  .services--section .container {
+    grid-template-columns: 1fr;
+  }
+  .about__us--section p,
+  .hero__section p,
+  .process--section .section--container p {
+    width: 100%;
+  }
+  .hero__section h1 {
+    width: 100%;
+  }
+  .hero__section {
+    width: 100%;
+  }
+  .container,
+  .section--container {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container,
+  .section--container {
+    padding: 0 10px;
+  }
+}
