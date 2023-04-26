@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Junction</title>
+    <title>Design Function</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +16,43 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <!-- POP UP -->
+    <div class="pop-up__form">
+      <div class="red__line"></div>
+      <h2>Get a Complimentary Onsite Process Audit Today!</h2>
+      <p>
+        Limited Time Offer - Schedule Now and Discover How You Can Improve Your
+        Production Processes
+      </p>
+      <div class="close__popup">
+        <img src="/images/close__popup.png" alt="close" />
+      </div>
+      <form action="#">
+        <div>
+          <label for="name--popup">Name</label>
+          <input type="text" name="name--popup" />
+        </div>
+        <div>
+          <label for="company--name--popup">Company Name</label>
+          <input type="text" name="name" />
+        </div>
+        <div>
+          <label for="email--popup">Email Address</label>
+          <input type="email" name="email--popup" />
+        </div>
+        <div>
+          <label for="phone--popup">Phone Number</label>
+          <input type="text" name="phone--popup" />
+        </div>
+        <div>
+          <label for="date--popup">Preferred Date and Time for Audit</label>
+          <input type="text" name="date--popup" />
+        </div>
+      </form>
+      <button type="submit">Schedule My Audit Now</button>
+    </div>
+
+    <!-- NAV -->
     <nav>
       <div class="container">
         <ul class="nav__col1">
@@ -23,6 +60,9 @@
             <p>DESIGN JUNCTION</p>
           </li>
         </ul>
+        <div class="burger">
+          <img src="/images/burger.png" alt="burger" />
+        </div>
         <ul class="nav__col2">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
@@ -351,22 +391,45 @@
         </div>
         <div class="faq__col2">
           <!-- BOX -->
-          <div class="faq--box">
-            <p>
-              How long does it take to design and develop a custom automation
-              solution?
-            </p>
-            <img src="/images/faq--down.png" alt="arrowDown" />
+          <div class="faq--box faq1">
+            <div>
+              <p>
+                How long does it take to design and develop a custom automation
+                solution?
+              </p>
+              <img src="/images/faq--down.png" alt="arrowDown" />
+            </div>
+            <!-- Answer -->
+            <div class="faq-body faq-body1">
+              The duration of the project varies depending on the complexity and
+              scope of the solution. Our team will work with you to develop a
+              timeline that meets your specific needs and requirements.
+            </div>
           </div>
           <!-- BOX -->
-          <div class="faq--box">
-            <p>What industries do you serve?</p>
-            <img src="/images/faq--down.png" alt="arrowDown" />
+          <div class="faq--box faq2">
+            <div>
+              <p>What industries do you serve?</p>
+              <img src="/images/faq--down.png" alt="arrowDown" />
+            </div>
+            <!-- Answer -->
+            <div class="faq-body faq-body2">
+              We serve a wide range of industries, including automotive, food
+              and beverage, pharmaceuticals, and more.
+            </div>
           </div>
           <!-- BOX -->
-          <div class="faq--box">
-            <p>What type of after-sales support do you provide?</p>
-            <img src="/images/faq--down.png" alt="arrowDown" />
+          <div class="faq--box faq3">
+            <div>
+              <p>What type of after-sales support do you provide?</p>
+              <img src="/images/faq--down.png" alt="arrowDown" />
+            </div>
+            <!-- Answer -->
+            <div class="faq-body faq-body3">
+              We provide ongoing support and maintenance services to ensure that
+              your automation solutions are always operating at peak
+              performance.
+            </div>
           </div>
           <!-- BOX -->
           <div class="faq--box">
@@ -434,5 +497,6 @@
         </ul>
       </div>
     </footer>
+    <script src="/general.js"></script>
   </body>
 </html>
